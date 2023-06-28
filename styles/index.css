@@ -1,1 +1,63 @@
-@import url('./rest.css')
+@import url('./rest.css');
+.root {
+    display: flex;
+    gap: 5%;
+}
+
+.root>section {
+    border: 1px solid;
+    flex-grow: 1;
+    padding: 2.5rem;
+}
+
+.root>section:nth-child(1) {
+    width: 70%;
+}
+
+.root>section:nth-child(2) {
+    width: 30%;
+}
+
+.main {
+    display: flex;
+    gap: 1rem;
+}
+
+.main>div {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-card {
+    display: flex;
+}
+
+.side-card img {
+    width: 16rem;
+    height: 11rem;
+}
+
+.main-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+@media screen and (max-width:992px) {
+    .root {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
